@@ -21,6 +21,7 @@ public class PriorityScheduler extends Tunnel{
 	PriorityQueue<Vehicle> waitSet;
 	
 	final Lock enter_lock;
+	// conditions used along with condition variables (semaphores) 
 	final Condition noAvailableTunnels;
 	final Condition notHighestPriorityVehicle;
 	
